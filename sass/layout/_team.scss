@@ -1,0 +1,127 @@
+.team {
+  min-width: 480px;
+  background-color: #f5f4fa;
+  padding: 60px 0 60px 0;
+
+  &-title {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+    margin-bottom: 30px;
+  }
+
+  &__title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 10px;
+  }
+
+  &__position {
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--secondary-color);
+  }
+
+  &__list-content-wrapper {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: var(--color-white);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+  }
+
+  &__list {
+    flex-wrap: wrap;
+    display: flex;
+  }
+
+  &__item {
+    margin: 0 auto;
+
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__img {
+    max-width: 450px;
+  }
+}
+
+// Стили для планшета
+
+@media screen and(min-width:768px) {
+  .team {
+    &__img {
+      max-width: 354px;
+    }
+  }
+}
+
+// Стили для десктопа
+
+@media screen and(min-width:1200px) {
+  .team {
+    padding: 94px 0 94px 0;
+    &__img {
+      max-width: 270px;
+    }
+
+    &-title {
+      margin-bottom: 50px;
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 1.16;
+      text-align: center;
+      letter-spacing: 0.03em;
+      color: #212121;
+    }
+  }
+}
+//   &__list {
+//     flex-wrap: wrap;
+//     display: flex;
+//     margin-left: -30px;
+//     margin-top: -30px;
+//   }
+
+//   &__item {
+//     margin-left: 30px;
+//     margin-top: 30px;
+//   }
+
+//   &__list-content-wrapper {
+//     padding-top: 30px;
+//     padding-bottom: 30px;
+//     background-color: var(--color-white);
+//     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+//       0px 2px 1px rgba(0, 0, 0, 0.2);
+//     border-radius: 0px 0px 4px 4px;
+//   }
+
+//   &__position {
+//     font-size: 16px;
+//     line-height: 1.18;
+//     text-align: center;
+//     letter-spacing: 0.03em;
+//     color: var(--secondary-color);
+//   }
+// }
+
+// &__title {
+//     font-weight: 500;
+//     font-size: 16px;
+//     line-height: 1.18;
+//     text-align: center;
+//     letter-spacing: 0.03em;
+//     margin-bottom: 10px;
+//   }
