@@ -5,6 +5,8 @@
   display: flex;
   justify-content: center;
 
+  
+
   &__item {
     align-items: center;
 
@@ -39,5 +41,19 @@
     .social-links__link:hover & {
       fill: var(--color-white);
     }
+  }
+}
+
+// Стили для планшета
+@media screen and(min-width:768px){
+  .social-links-container{
+    margin-left: 165px;
+  }
+}
+
+// Стили для десктопа
+@media screen and(min-width:1200px){
+  .social-links-container{
+    margin-left: 0;
   }
 }

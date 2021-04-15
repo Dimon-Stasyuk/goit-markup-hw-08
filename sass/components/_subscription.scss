@@ -69,9 +69,29 @@
   }
 }
 
+
+// Стили для планшета
+@media screen and(min-width:768px){
+  .adress-and-social-container{
+    display: flex;
+    align-items: baseline;
+  }
+}
+
+
 // Стили для десктопа
 @media screen and(min-width:1200px){
   .subscription {
+    margin-top: 0;
     margin-left: 93px;
+
+    &__form{
+      flex-direction: row;
+    }
+
+    &__btn{
+      margin-top: 0;
+      margin-left: 12px;
+    }
   }
 }
