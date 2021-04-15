@@ -1,4 +1,5 @@
 .footer {
+  min-width: 480px;
   background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
@@ -6,7 +7,9 @@
 
 .footer-container {
   display: flex;
-  align-items: baseline;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
 .footer-social-list-icon {
@@ -38,7 +41,8 @@
   margin-right: 10px;
 }
 
-.sicial-title {
+.social-title {
+  margin-bottom: 20px;
   font-family: Roboto;
   font-weight: 700;
   font-size: 14px;
@@ -48,6 +52,20 @@
   color: var(--color-white);
 }
 
-.social-links-container {
-  margin-left: 72px;
+
+
+// Стили для планшета
+@media screen and(min-width: 768px){
+
+}
+
+// Стили для десктопа
+@media screen and(min-width: 1200px){
+  .social-links-container {
+    margin-left: 72px;
+  }
+
+  .social-title{
+    margin-bottom: 0;
+  }
 }

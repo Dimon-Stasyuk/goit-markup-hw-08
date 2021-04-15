@@ -194,6 +194,7 @@ body {
 .adress {
   font-style: normal;
   margin-top: 20px;
+  margin-bottom: 60px;
 }
 
 .adress__name {
@@ -224,12 +225,19 @@ body {
   color: rgba(255, 255, 255, 0.6);
 }
 
+@media screen and (min-width: 1200px) {
+  .adress {
+    margin-bottom: 0;
+  }
+}
+
 .subscription {
-  margin-left: 93px;
+  margin-top: 60px;
 }
 
 .subscription__form {
   display: flex;
+  flex-direction: column;
   align-items: center;
 }
 
@@ -259,16 +267,17 @@ body {
 }
 
 .subscription__btn {
+  margin-top: 20px;
   background: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   display: flex;
+  align-items: center;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
   color: #ffffff;
-  margin-left: 12px;
   padding: 10px 0 10px 29px;
   border: none;
   min-width: 200px;
@@ -281,10 +290,7 @@ body {
 }
 
 .subscription__icon {
-  position: absolute;
-  transform: translateY(-50%);
-  top: 50%;
-  right: 28px;
+  margin-left: 10px;
 }
 
 .subscription::placeholder {
@@ -293,6 +299,12 @@ body {
   align-items: center;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+}
+
+@media screen and (min-width: 1200px) {
+  .subscription {
+    margin-left: 93px;
+  }
 }
 
 .backdrop {
@@ -1071,6 +1083,7 @@ body {
 }
 
 .footer {
+  min-width: 480px;
   background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
@@ -1078,7 +1091,9 @@ body {
 
 .footer-container {
   display: flex;
-  align-items: baseline;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .footer-social-list-icon {
@@ -1110,7 +1125,8 @@ body {
   margin-right: 10px;
 }
 
-.sicial-title {
+.social-title {
+  margin-bottom: 20px;
   font-family: Roboto;
   font-weight: 700;
   font-size: 14px;
@@ -1120,8 +1136,13 @@ body {
   color: var(--color-white);
 }
 
-.social-links-container {
-  margin-left: 72px;
+@media screen and (min-width: 1200px) {
+  .social-links-container {
+    margin-left: 72px;
+  }
+  .social-title {
+    margin-bottom: 0;
+  }
 }
 
 .portfolio-section {
