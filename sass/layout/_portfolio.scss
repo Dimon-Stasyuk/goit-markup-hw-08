@@ -5,15 +5,13 @@
 
 .projects {
   flex-wrap: wrap;
-  display: flex;
-  margin-left: -30px;
-  margin-top: -30px;
+  display: flex;  
 
   &__item {
-    position: relative;
+
+    position: relative;    
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    margin-left: 30px;
-    margin-top: 30px;
+   
   }
 
   &__item:focus,
@@ -68,4 +66,45 @@
 .projects__link:focus .projects__overlay,
 .projects__link:hover .projects__overlay {
   transform: translateY(0%);
+}
+
+
+
+@media screen and(min-width:768px) {
+  .projects{    
+      margin-left: -30px;
+    margin-top: -30px;
+    
+
+    &__item{
+      flex-basis: calc(100% / 2 - 30px);
+    margin-left: 30px;
+    margin-top: 30px;
+    }
+  }
+}
+
+@media screen and(max-width:767px){
+  .projects {    
+    &__item {      
+     &:not(:last-child){
+       margin-bottom: 30px;
+     }
+    }}
+}
+
+@media screen and(max-width:1199px){
+  .portfolio-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  
+}
+
+@media screen and(min-width:1200px){
+  .projects{
+    &__item{
+      flex-basis: calc(100% / 3 - 30px);
+    }
+  }
 }

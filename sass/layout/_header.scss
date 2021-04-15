@@ -128,7 +128,7 @@
       background-color: var(--accent-color);
       height: 4px;
       border-radius: 2px;
-      bottom: 0;
+      bottom: -3px;
       left: 0;
     }
   }
@@ -144,6 +144,12 @@
     border-bottom: 1px solid #ececec;
   }
 
+  .current{
+    &::after{
+      bottom: 0px;
+    }
+  }
+
   .contacts {
     display: flex;
 
@@ -153,6 +159,8 @@
     }
   }
 }
+
+
 
 //   .container {
 //     display: flex;
