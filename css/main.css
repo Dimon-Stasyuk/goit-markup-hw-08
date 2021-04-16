@@ -32,11 +32,6 @@
   justify-content: space-between;
 }
 
-.hero .container {
-  padding: 118px 60px;
-  text-align: center;
-}
-
 @media screen and (min-width: 480px) {
   .container {
     width: 480px;
@@ -360,6 +355,12 @@ body {
   .subscription__btn {
     margin-top: 0;
     margin-left: 12px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .subscription__input {
+    width: 450px;
   }
 }
 
@@ -793,7 +794,9 @@ body {
 }
 
 .hero {
+  padding: 200px 0;
   min-width: 480px;
+  text-align: center;
   margin: 0 auto;
   background: #2f303a;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-mobile.jpg);
@@ -832,6 +835,7 @@ body {
 
 @media screen and (min-width: 768px) {
   .hero {
+    padding: 118px 0;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-tablet.jpg);
   }
   .hero__title {
@@ -894,6 +898,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     margin-left: -30px;
+    margin-bottom: -30px;
   }
   .features__title {
     text-align: start;
@@ -936,6 +941,16 @@ body {
 .abilities {
   padding-top: 47px;
   padding-bottom: 94px;
+}
+
+.abilities__title {
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 1.16;
+  color: #212121;
 }
 
 .abilities__list {
@@ -1032,6 +1047,10 @@ body {
 }
 
 @media screen and (min-width: 768px) {
+  .team__list {
+    margin-bottom: -30px;
+    margin-left: -30px;
+  }
   .team__img {
     max-width: 354px;
   }
@@ -1240,7 +1259,7 @@ body {
   line-height: 2;
   letter-spacing: 0.06em;
   margin-bottom: 4px;
-  color: var(--main-color);
+  color: #212121;
 }
 
 .projects__name {
